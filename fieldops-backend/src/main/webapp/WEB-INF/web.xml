@@ -1,0 +1,19 @@
+<web-app>
+    <servlet>
+        <servlet-name>JobServlet</servlet-name>
+        <servlet-class>com.fieldops.controller.JobServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CustomerServlet</servlet-name>
+        <servlet-class>com.fieldops.controller.CustomerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>JobServlet</servlet-name>
+        <url-pattern>/api/jobs</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CustomerServlet</servlet-name>
+        <url-pattern>/api/customers</url-pattern>
+    </servlet-mapping>
+</web-app>
